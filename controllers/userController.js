@@ -15,6 +15,6 @@ export const userPost = async (req, res) => {
     }catch (err) {
         console.log(err);
 
-        res.status(500).send({message: 'Ջհաջողվեց մուտք գործել'})
+        res.status(500).send({message: 'Ջհաջողվեց մուտք գործել', error: err})
     }
 }
