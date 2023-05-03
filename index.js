@@ -4,6 +4,7 @@ import { userPost } from "./controllers/userController.js";
 
 const app = express()
 
+app.use(express.urlencoded({extended: true}))
 app.use(express.json())
 
 mongoose.connect('mongodb+srv://safaryanmxitar:Ptptikmxo14@cluster0.ir5xmck.mongodb.net/test')
