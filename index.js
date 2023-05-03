@@ -10,6 +10,9 @@ mongoose.connect('mongodb+srv://safaryanmxitar:Ptptikmxo14@cluster0.ir5xmck.mong
 .then(() => console.log("DB is OK!"))
 .catch((err) => console.log("DB ERROR", err))
 
+app.get('/', (req, res) => {
+    res.send('glxavor ej')
+})
 app.post('/auth/register', (req, res) => {
     userPost(req, res)
 })
